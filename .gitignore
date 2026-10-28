@@ -8,3 +8,6 @@ coverage/
 !.env.example
 *.tar.gz
 *.zip
+# Exclude raw source videos but allow the public asset
+*.mp4
+!public/*.mp4

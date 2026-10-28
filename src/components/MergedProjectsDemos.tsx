@@ -255,7 +255,7 @@ export const MediaPlayerDemo: React.FC = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    const audio = new Audio('/assets/aistudio/guitar_755a5675.mp3');
+    const audio = new Audio(`${import.meta.env.BASE_URL}guitar.mp3`);
     audio.loop = true;
     audio.volume = volume / 100;
     audioRef.current = audio;
